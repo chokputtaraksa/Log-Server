@@ -56,7 +56,7 @@ app.use(cors());
 router(app);
 
 /// Start server
-app.listen(options.port);
+app.listen(options.port || 10000);
 
 ///
 /// Show somethin on stdout
