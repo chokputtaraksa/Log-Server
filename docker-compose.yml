@@ -1,0 +1,11 @@
+version: '2'
+services:
+    server:
+        build: .
+        container_name: "log-server"
+        ports:
+            - 8005:8005
+        volumes:
+            - .:/app
+            - /var/logs
+        network_mode: "host"
