@@ -7,4 +7,4 @@ services:
             - 10000:10000
         volumes:
             - .:/app
-            - /var/logs
+            - /var/logs:/var/logs
